@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mccourse",
+	"version": "${version}",
+	"name": "MC Course Mod",
+	"description": "Kaupenjoe 1.21 Fabric Course",
+	"authors": [
+		"Withered_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0",
+	"icon": "assets/mccourse/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.withered.mccourse.MCCourseMod"
+		],
+		"fabric-datagen": [
+			"net.withered.mccourse.MCCourseModDataGenerator"
+		],
+        "client": [
+           "net.withered.mccourse.MCCourseModClient"
+        ]
+	},
+	"mixins": [
+		"mccourse.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
