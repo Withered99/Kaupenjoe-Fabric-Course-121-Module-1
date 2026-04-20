@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.withered.mccourse.MCCourseMod;
+import net.withered.mccourse.block.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup FLUORITE_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -22,8 +23,10 @@ public class ModItemGroups {
         public static final ItemGroup FLUORITE_BLOCK_GROUP = Registry.register(Registries.ITEM_GROUP,
                 Identifier.of(MCCourseMod.MOD_ID, "fluorite_blocks"),
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fluorite_blocks"))
-                        .icon(() -> new ItemStack(ModItems.RAW_FLUORITE)).entries((displayContext, entries) -> {
-                            entries.add(Blocks.HAY_BLOCK);
+                        .icon(() -> new ItemStack(ModBlocks.FLUORITE_BLOCK)).entries((displayContext, entries) -> {
+                            entries.add(ModBlocks.FLUORITE_BLOCK);
+                            entries.add(ModBlocks.FLUORITE_ORE);
+                            entries.add(ModBlocks.FLUORITE_DEEPSLATE_ORE);
                         }).build());
 
     public static void registerItemGroups(){
