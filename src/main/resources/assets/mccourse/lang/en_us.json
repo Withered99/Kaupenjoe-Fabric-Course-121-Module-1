@@ -1,6 +1,7 @@
 {
   "item.mccourse.fluorite": "Fluorite",
   "item.mccourse.raw_fluorite": "Raw Fluorite",
+  "item.mccourse.chainsaw": "Chainsaw",
 
   "block.mccourse.fluorite_block": "Block of Fluorite",
   "block.mccourse.fluorite_ore": "Fluorite Ore",
@@ -9,5 +10,6 @@
   "block.mccourse.fluorite_nether_ore": "Nether Fluorite Ore",
 
   "itemgroup.fluorite": "Fluorite Items",
-  "itemgroup.fluorite_blocks": "Fluorite Blocks"
+  "itemgroup.fluorite_blocks": "Fluorite Blocks",
+  "itemgroup.extras": "Extras"
 }

@@ -31,6 +31,13 @@ public class ModItemGroups {
                             entries.add(ModBlocks.FLUORITE_NETHER_ORE);
                         }).build());
 
+    public static final ItemGroup EXTRAS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(MCCourseMod.MOD_ID, "extras"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.extras"))
+                    .icon(() -> new ItemStack(ModItems.CHAINSAW)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.CHAINSAW);
+                    }).build());
+
     public static void registerItemGroups(){
         MCCourseMod.LOGGER.info("Registering Item Groups for " + MCCourseMod.MOD_ID);
     }
