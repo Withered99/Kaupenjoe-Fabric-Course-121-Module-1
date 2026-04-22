@@ -25,6 +25,7 @@ public class ModItemGroups {
                 FabricItemGroup.builder().displayName(Text.translatable("itemgroup.fluorite_blocks"))
                         .icon(() -> new ItemStack(ModBlocks.FLUORITE_BLOCK)).entries((displayContext, entries) -> {
                             entries.add(ModBlocks.FLUORITE_BLOCK);
+
                             entries.add(ModBlocks.FLUORITE_ORE);
                             entries.add(ModBlocks.FLUORITE_DEEPSLATE_ORE);
                             entries.add(ModBlocks.FLUORITE_END_ORE);
@@ -36,6 +37,7 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.extras"))
                     .icon(() -> new ItemStack(ModItems.CHAINSAW)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CHAINSAW);
+                        entries.add(ModBlocks.MAGIC_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

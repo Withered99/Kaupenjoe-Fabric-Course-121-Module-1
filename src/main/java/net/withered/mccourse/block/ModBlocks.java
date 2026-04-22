@@ -11,6 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.withered.mccourse.MCCourseMod;
+import net.withered.mccourse.block.custom.MagicBlock;
 
 public class ModBlocks {
     public static final Block FLUORITE_BLOCK = registerBlock("fluorite_block",
@@ -44,6 +45,12 @@ public class ModBlocks {
     public static final Block FLUORITE_END_ORE = registerBlock("fluorite_end_ore",
             new ExperienceDroppingBlock(UniformIntProvider.create(3,6), AbstractBlock.Settings.create()
                     .strength(7f)
+                    .requiresTool()
+            ));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create()
+                    .strength(1f)
                     .requiresTool()
             ));
 
