@@ -37,6 +37,8 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.extras"))
                     .icon(() -> new ItemStack(ModItems.CHAINSAW)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CHAINSAW);
+                        entries.add(ModItems.STRAWBERRY);
+                        entries.add(ModItems.STARLIGHT_ASHES);
                         entries.add(ModBlocks.MAGIC_BLOCK);
                     }).build());
 

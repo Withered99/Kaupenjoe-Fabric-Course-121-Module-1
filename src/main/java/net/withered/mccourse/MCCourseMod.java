@@ -2,6 +2,7 @@ package net.withered.mccourse;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.withered.mccourse.block.ModBlocks;
 import net.withered.mccourse.item.ModItemGroups;
 import net.withered.mccourse.item.ModItems;
@@ -17,5 +18,7 @@ public class MCCourseMod implements ModInitializer {
         ModItems.registerModItems();
         ModItemGroups.registerItemGroups();
         ModBlocks.registerModBlocks();
+
+        FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 	}
 }
