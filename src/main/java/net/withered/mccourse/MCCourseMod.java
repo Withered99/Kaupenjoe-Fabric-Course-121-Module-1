@@ -15,8 +15,9 @@ public class MCCourseMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-        ModItems.registerModItems();
         ModItemGroups.registerItemGroups();
+
+        ModItems.registerModItems();
         ModBlocks.registerModBlocks();
 
         FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);

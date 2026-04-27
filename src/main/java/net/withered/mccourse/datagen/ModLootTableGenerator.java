@@ -28,6 +28,10 @@ public class ModLootTableGenerator extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.FLUORITE_BLOCK);
+
+        addDrop(ModBlocks.FLUORITE_STAIRS);
+        addDrop(ModBlocks.FLUORITE_SLAB, slabDrops(ModBlocks.FLUORITE_SLAB));
+
         addDrop(ModBlocks.MAGIC_BLOCK);
 
         addDrop(ModBlocks.FLUORITE_ORE, oreDrops(ModBlocks.FLUORITE_ORE, ModItems.RAW_FLUORITE));

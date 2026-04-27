@@ -8,6 +8,10 @@
   "block.mccourse.magic_block": "Magic Block",
 
   "block.mccourse.fluorite_block": "Block of Fluorite",
+
+  "block.mccourse.fluorite_stairs": "Fluorite Stairs",
+  "block.mccourse.fluorite_slab": "Fluorite Slab",
+
   "block.mccourse.fluorite_ore": "Fluorite Ore",
   "block.mccourse.fluorite_deepslate_ore": "Deepslate Fluorite Ore",
   "block.mccourse.fluorite_end_ore": "End Fluorite Ore",
